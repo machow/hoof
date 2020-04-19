@@ -30,4 +30,4 @@ docker run --rm -v $(pwd):/usr/src/app antlr /bin/bash -c "antlr4 -Dlanguage=Pyt
 ## References
 
 * [antlr website](https://www.antlr.org/)
-* Logo was (very mildly) adapted from this image from [paintingvalley](https://paintingvalley.com/moose-drawing-outline#moose-drawing-outline-2.jpg) (claimed CC BY-NC 4.0) but seems to be all over the internet. If you want to contribute contribute one with less dubious origins, let me know!
+* Logo was (very mildly) adapted from this image from [paintingvalley](https://paintingvalley.com/moose-drawing-outline#moose-drawing-outline-2.jpg) (claimed CC BY-NC 4.0). If you want to contribute one with less dubious origins, let me know!
