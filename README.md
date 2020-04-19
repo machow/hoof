@@ -4,12 +4,16 @@
 
 hoof is a python library for creating abstract syntax trees (ASTs) from [antlr](https://www.antlr.org/) parsers.
 
-Whether you are dipping your toes in the world of parsing, or a grizzled veteran, hoof will help with...
+Whether you are dipping your toes in the world of parsing, or a grizzled veteran, hoof will help you get started:
 
 * Importing and running a grammar's parser, lexer, and tree visitor.
 * Using a declarative syntax to quickly create ASTs.
 * Progressing to tree shaping more tricky ones.
 * Quick, extensible options for error handling.
+
+I built hoof because I found myself often repeating the same code, and hitting the
+same surprises when working on projects. Building, debugging, and shaping the output of
+parsers can seem daunting--hopefully hoof makes it a little easier to get started!
 
 ## Install
 
