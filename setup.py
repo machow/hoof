@@ -2,7 +2,7 @@
 
 import re
 import ast
-from setuptools import setup
+from setuptools import setup, find_namespace_packages
 
 _version_re = re.compile(r'__version__\s+=\s+(.*)')
 
@@ -14,7 +14,7 @@ setup(
     name='hoof',
     version=version,
     py_modules=['hoof'],
-    packages=["hoof_examples"],
+    packages=find_namespace_packages(include="hoof_examples.*"),
     install_requires=[
         'antlr4-python3-runtime>=4.7.2',
         'siuba'
