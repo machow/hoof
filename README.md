@@ -1,5 +1,7 @@
 # Hoof
 
+[![Build Status](https://travis-ci.org/machow/hoof.svg?branch=master)](https://travis-ci.org/machow/hoof)
+
 <img width="30%" align="right" src="./logo.svg">
 
 hoof is a python library for creating abstract syntax trees (ASTs) from [antlr](https://www.antlr.org/) parsers.
@@ -11,9 +13,8 @@ Whether you are dipping your toes in the world of parsing, or a grizzled veteran
 * Progressing to tree shaping more tricky ones.
 * Quick, extensible options for error handling.
 
-I built hoof because I found myself often repeating the same code, and hitting the
-same surprises when working on projects. Building, debugging, and shaping the output of
-parsers can seem daunting--hopefully hoof makes it a little easier to get started!
+I built hoof because I found myself often repeating the same code on projects, and hitting the same surprises.
+Building, debugging, and shaping the output of parsers can seem daunting--hoof makes it a little easier to get started!
 
 ## Install
 
@@ -94,7 +95,7 @@ tree1
 
 
 
-    <hoof_examples.Tiny.TinyParser.TinyParser.UnaryExprContext at 0x10feac2b0>
+    <hoof_examples.Tiny.TinyParser.TinyParser.UnaryExprContext at 0x1107e22b0>
 
 
 
@@ -152,7 +153,7 @@ op
 
 
 
-    <antlr4.tree.Tree.TerminalNodeImpl at 0x10feac5c0>
+    <antlr4.tree.Tree.TerminalNodeImpl at 0x1107e25c0>
 
 
 
