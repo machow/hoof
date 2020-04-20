@@ -410,3 +410,8 @@ E.g. visitTerm when you meant visitTerminal
 ```
 docker run --rm -v $(pwd):/usr/src/app antlr /bin/bash -c "antlr4 -Dlanguage=Python3 -visitor tests/Expr.g4"
 ```
+
+## References
+
+* [antlr website](https://www.antlr.org/)
+* Logo was (very mildly) adapted from this image from [paintingvalley](https://paintingvalley.com/moose-drawing-outline#moose-drawing-outline-2.jpg) (claimed CC BY-NC 4.0). Get in touch if you'd like to contribute a new one!
