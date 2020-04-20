@@ -21,7 +21,7 @@ parsers can seem daunting--hopefully hoof makes it a little easier to get starte
 pip install hoof
 ```
 
-<br><br>
+<br>
 
 <table>
   <tbody>
@@ -63,6 +63,8 @@ pip install hoof
   </tbody>
 </table>
 
+<br>
+
 ## Example: Parsing text
 
 First, let's consider grammar in hoof_examples/Tiny.
@@ -92,7 +94,7 @@ tree1
 
 
 
-    <hoof_examples.Tiny.TinyParser.TinyParser.UnaryExprContext at 0x10655e2b0>
+    <hoof_examples.Tiny.TinyParser.TinyParser.UnaryExprContext at 0x10feac2b0>
 
 
 
@@ -150,7 +152,7 @@ op
 
 
 
-    <antlr4.tree.Tree.TerminalNodeImpl at 0x10655e5c0>
+    <antlr4.tree.Tree.TerminalNodeImpl at 0x10feac5c0>
 
 
 

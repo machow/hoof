@@ -22,7 +22,7 @@ pip install hoof
 ```
 
 
-<br><br>
+<br>
 
 <table>
   <tbody>
@@ -63,6 +63,8 @@ pip install hoof
     </tr>
   </tbody>
 </table>
+
+<br>
 
 
 ## Example: Parsing text
