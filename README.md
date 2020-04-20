@@ -17,6 +17,50 @@ parsers can seem daunting--hopefully hoof makes it a little easier to get starte
 
 ## Install
 
+```
+pip install hoof
+```
+
+<table>
+  <tbody>
+    <tr>
+      <th colspan=3>Jump to Example...</td>
+    </tr>
+    <tr>
+      <td align="center"><a href="#example-parsing-text">Parsing text</a><br>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>    
+        <span>&nbsp;&nbsp;</span>
+      </td>
+      <td align="center"><a href="#example-create-a-simple-ast">Create a simple AST</a><br>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>        
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span>&nbsp;&nbsp;</span>
+      </td>
+      <td align="center"><a href="#example-create-an-executable-python-ast">Create and run the python AST</a><br>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>    
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>     
+        <span>&nbsp;&nbsp;</span>        
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 ## Example: Parsing text
 
 First, let's consider grammar in hoof_examples/Tiny.
@@ -46,7 +90,7 @@ tree1
 
 
 
-    <hoof_examples.Tiny.TinyParser.TinyParser.UnaryExprContext at 0x10b26c2b0>
+    <hoof_examples.Tiny.TinyParser.TinyParser.UnaryExprContext at 0x112eed240>
 
 
 
@@ -104,7 +148,7 @@ op
 
 
 
-    <antlr4.tree.Tree.TerminalNodeImpl at 0x10b26c5c0>
+    <antlr4.tree.Tree.TerminalNodeImpl at 0x112eed550>
 
 
 
@@ -410,8 +454,3 @@ E.g. visitTerm when you meant visitTerminal
 ```
 docker run --rm -v $(pwd):/usr/src/app antlr /bin/bash -c "antlr4 -Dlanguage=Python3 -visitor tests/Expr.g4"
 ```
-
-## References
-
-* [antlr website](https://www.antlr.org/)
-* Logo was (very mildly) adapted from this image from [paintingvalley](https://paintingvalley.com/moose-drawing-outline#moose-drawing-outline-2.jpg) (claimed CC BY-NC 4.0). Get in touch if you'd like to contribute a new one!
