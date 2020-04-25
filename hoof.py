@@ -66,16 +66,16 @@ def simplify_context(node, explicit = False):
         
         return siu.Call(node.__class__.__name__, node.getText())
 
+    # note: node.children is None for no match rules alternatives
     return siu.Call(
             node.__class__.__name__,
-            *map(lambda x: simplify_context(x, explicit = explicit), node.children)
+            *map(lambda x: simplify_context(x, explicit = explicit), node.children or [])
             )
 
 @to_symbol.register(AST)
 def _to_symbol_ast(x):
     from siuba.siu import Symbolic
     return Symbolic(_callify(x))
-
 
 def _callify(node):
     from siuba.siu import Call
